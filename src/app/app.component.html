@@ -4,18 +4,7 @@
   </div>
 </header>
 
-<div *ngIf="hasError" class="error">An error has happened to access the API.</div>
-
-<ul *ngIf="passedCourses">
-  <li *ngFor="let course of passedCourses | keyvalue">
-    <p class="year">{{course.key}}</p>
-    <ul *ngIf="course.value">
-      <li *ngFor="let subject of course.value | keyvalue">
-        <p class="subject">{{subject.value}}</p>
-      </li>
-    </ul>
-  </li>
-</ul>
+<app-coursereport></app-coursereport>
 
 <div class="container">
 <router-outlet></router-outlet>

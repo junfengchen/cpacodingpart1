@@ -1,7 +1,8 @@
 {
     "/api/*": {
-        "target": "https://cpacodingchallenge.azurewebsites.net/api",
-        "secure": false,
+        "target": "https://cpacodingchallenge.azurewebsites.net/",
+        "secure": true,
+        "changeOrigin": true,
         "logLevel": "debug"
     }
 }

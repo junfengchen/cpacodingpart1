@@ -1,5 +1,4 @@
 $primary: rgb(123,0,255);
-$error: rgb(255,0,0);
 
 body{
     margin: 0;
@@ -26,9 +25,4 @@ header{
 .container{
     width: 80%;
     margin: 0 auto;
-}
-
-.error{
-    padding: 20px;
-    color: $error;
 }
