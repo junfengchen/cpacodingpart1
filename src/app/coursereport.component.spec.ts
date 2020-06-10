@@ -37,7 +37,7 @@ describe('CoursereportComponent', () => {
   });
 
   it('should render the report after the API loading', fakeAsync(_ => {
-    spyOn(service, "getCourseResult").and.returnValue(of(new Map([[2015, ["Course Name"]]])));
+    spyOn(service, 'getCourseResult').and.returnValue(of(new Map([[2015, ['Course Name']]])));
     component.ngOnInit();
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
@@ -45,7 +45,7 @@ describe('CoursereportComponent', () => {
   }));
 
   it('should show the course list', fakeAsync(_ => {
-    spyOn(service, "getCourseResult").and.returnValue(of(new Map([[2015, ["Financial Reporting"]]])));
+    spyOn(service, 'getCourseResult').and.returnValue(of(new Map([[2015, ['Financial Reporting']]])));
     component.ngOnInit();
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
@@ -53,7 +53,7 @@ describe('CoursereportComponent', () => {
   }));
 
   it('should show the course subject', fakeAsync(_ => {
-    spyOn(service, "getCourseResult").and.returnValue(of(new Map([[2016, ["Advanced Taxation"]]])));
+    spyOn(service, 'getCourseResult').and.returnValue(of(new Map([[2016, ['Advanced Taxation']]])));
     component.ngOnInit();
     fixture.detectChanges();
     const compiled = fixture.nativeElement;

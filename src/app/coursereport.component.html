@@ -3,7 +3,7 @@
 <div class="report">
     <ul *ngIf="courseList">
     <li *ngFor="let course of courseList | keyvalue">
-        <p class="year">123{{course.key}}</p>
+        <p class="year">{{course.key}}</p>
         <ul *ngIf="course.value">
         <li *ngFor="let subject of course.value | keyvalue">
             <p class="subject">{{subject.value}}</p>
