@@ -16,7 +16,6 @@ export class CoursereportComponent implements OnInit {
 
   ngOnInit() {
     this.loading = true;
-
     this.http.getCourseResult().subscribe(data => {
       this.courseList = data;
       this.hasError = false;

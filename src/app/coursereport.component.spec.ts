@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed, fakeAsync } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed, fakeAsync, tick, flushMicrotasks } from '@angular/core/testing';
 
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { CoursereportComponent } from './coursereport.component';
@@ -26,7 +26,6 @@ describe('CoursereportComponent', () => {
   });
 
   it('should render page', () => {
-    const fixture = TestBed.createComponent(CoursereportComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
     expect(compiled.querySelector('.loading').textContent).toContain('Loading');
