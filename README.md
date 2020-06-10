@@ -7,6 +7,7 @@
 	Improve user experience by adding loading image. Error message will be displayed when API loading fails.
 	Strictly follow DIY (don't repeat yourself) principal.
 	Some OOP design patterns are adopted.
+    Good coverage for service and UI component test cases.
 
 ## Dependencies:
     'Tslint' to validate against coding standards
