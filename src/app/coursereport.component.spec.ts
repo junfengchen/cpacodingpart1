@@ -52,7 +52,7 @@ describe('CoursereportComponent', () => {
     expect(compiled.querySelector('.subject').textContent).toContain('Financial Reporting');
   }));
 
-  it('should show the course list', fakeAsync(_ => {
+  it('should show the course subject', fakeAsync(_ => {
     spyOn(service, "getCourseResult").and.returnValue(of(new Map([[2016, ["Advanced Taxation"]]])));
     component.ngOnInit();
     fixture.detectChanges();
